@@ -1,8 +1,11 @@
-# import requests
+import requests
 
-url = 'http://wttr.in/?0T'
+search_parametrs = {
+    'u': '',
+    'T': ''
+}
+url = 'https://wttr.in'
 
-# response = requests.get('http://wttr.in/?0T')
-# text = response.text
+response = requests.get(url, params=search_parametrs)
 
-# print(response.text)
+print(response.text)
